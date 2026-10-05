@@ -1,9 +1,5 @@
 # Module JS / SPA - Vue.js
 
----
-#### Info formateurs / formatrices : la branche "main" de ce dépôt est désormais basée sur la version 3 de Vue.js. Le support utilisant la version 2 a été archivé dans la branche v2.
----
-
 ## Préambule
 En préambule de ce module, familiarisez-vous avec le concept de Single Page Application (SPA). L'objectif est de répondre aux questions suivantes :
 * Quand et pourquoi ce type d'applications a vu le jour ?
@@ -89,7 +85,13 @@ Commencez par créer le projet via la commande :
 `npm init vue@latest`
 
 Au cours de la création du projet, plusieurs questions vont vous être posées.
-Dans le cadre du module, nous n'utiliserons __pas__ JSX ni Typescript. Veillez donc bien à désactiver ces options.
+Dans le cadre du module, nous n'utiliserons __pas__ JSX ni Typescript. Veillez donc bien à désactiver ces options :
+```
+Use TypeScript? No
+Sélectionner Router + Pinia dans la liste.
+Skip all example code and start with a blank Vue project? Yes
+```
+
 Pour les autres options, vous pouvez utiliser les valeurs proposées par défaut.
 
 Une fois le projet créé, prenez le temps de passer en revue les fichiers et dossiers créés dans votre répertoire projet. Quels sont ceux que vous connaissez ? Quelle est leur fonction ?
@@ -214,6 +216,8 @@ Pour rendre paramétrable une fonction il faut lui ajouter des arguments. Pour r
 * Modifiez le composant `CitiesList` pour passer les props `name`, `weather`, `temperature`, et `updatedAt` afin d'afficher les mêmes informations que précédemment
 
 À ce stade, vous devriez avoir la même chose qu'avant en terme de rendu, néanmoins nous sommes prêts à faire notre liste de villes car nous avons un composant `City` qui est désormais paramétrable grâce aux props !
+
+NOTE : vous pouvez aussi faire le choix de passer une props `city` qui contient **l'objet entier** de la ville.
 
 ➡️ **Faites un commit avec un message explicite**
 
