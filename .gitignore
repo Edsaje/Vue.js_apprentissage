@@ -1,1 +1,23 @@
-/.idea
+# IDE / Editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Dependencies & Build
+node_modules/
+dist/
+dist-ssr/
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Logs & Cache
+*.log
+.eslintcache
+
+# OS files
+.DS_Store
+Thumbs.db

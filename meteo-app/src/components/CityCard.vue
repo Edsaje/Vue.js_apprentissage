@@ -1,7 +1,13 @@
 <script>
+import { format } from 'timeago.js'
 export default {
   name: 'CityCard',
   props: ['name', 'weather', 'temperature', 'updatedAt'],
+  computed: {
+    formattedDate() {
+      return format(this.updatedAt)
+    }
+  }
 };
 </script>
 
@@ -14,7 +20,7 @@ export default {
      {{ temperature }}
   </p>
   <p>
-    {{ updatedAt?.toLocaleString() }}
+    {{ formattedDate }}
   </p>
 </template>
 
