@@ -1,10 +1,6 @@
 <script>
-import CitiesList from './views/CitiesList.vue';
 export default {
   name: 'App',
-  components: {
-    CitiesList
-  },
   data() {
     return {
       message: 'Bienvenue sur mon app Météo !',
@@ -26,8 +22,8 @@ export default {
   <p>
     {{ auteur }}
   </p>
-  <CitiesList />
-  <button @click="onListClick">Cliquez bande d'escalopes</button>
+  <router-view />
+  <button @click="$router.push('/villes')">Cliquez bande d'escalopes</button>
 </template>
 
 <style scoped></style>
